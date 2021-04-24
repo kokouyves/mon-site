@@ -1,0 +1,14 @@
+body{
+    background: peachpuff;
+}
+h1 { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 5px 3px 0px darkseagreen;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(0, 25, 139, 0.836)
+    
+
+
+}

@@ -1,36 +1,43 @@
-<!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- mon premier site  -->
-    <title>SITE D INSCRIPTION</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- mon premier site  -->
+        <title>SITE D INSCRIPTION</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
     <header>
         <h1>PREMIER ETAPE POUR INSCRIPTION EN LIGNE</h1>
     </header>
     <h2>UNIVERSITE DE LOME</h2>
-    <P class="welcome"> L'universite de lomé est une universite située en Afrique de l'ouest,
-        plus precisement au TOGO. Elle est une des <strong>meilleures université 
-        de la sous région </strong> </P>
-        <h3>logo de l'université de Lomé</h3>
-        <img src="img/lom.png" height="200">
-        <h4>L'INSCRIPTION EN LIGNE</h4>
-        <form action=*/action.php* method=*post*>
+    <p class="welcome"> L'universite de lomé est une universite située en Afrique de l'ouest,
+        plus precisement au TOGO. Elle est une des <strong>meilleures université
+        de la sous région </strong>
+    </p>
+    <h3>logo de l'université de Lomé</h3>
+    <img src="img/lom.png" height="200">
+    <h4>L'INSCRIPTION EN LIGNE</h4>
+        <form action="/action.php" method="POST">
             <label for="name">Nom </label>
-            <input id=*name* type=*text* placeholder=*entrer votre nom*><br>
+            <input id="name" type="text" placeholder="entrer votre nom"><br/>
             <label for="age">Age</label>
-            <input id="age" type=*number*> <br>
+            <input id="age" type="number" /> <br/>
+            <label for="date-naissance">Date de naissance</label>
+            <input id="date-naissance" type="date" /> <br/>
             <!-- input select  -->
             <label for="gender">Genre</label>
+
             <select id="gender">
                 <option value="homme">Homme</option>
                 <option value="femme">Femme</option>
+            </select>
+            <br/><br/>
+            <button type="submit" name="valider">Valider</button>
+            <button type="reset" name="annuler">Annuler</button>
+        </form>
 
-
-    
-</body>
+    </body>
 </html>
